@@ -19,12 +19,12 @@ export default function HomePage(){
                     <Route path="/" element={<Home/>} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/contact" element={<ContactPage />} />
-                    <Route path="/*" element={<NotFoundPage />} />
                     <Route path="/products" element={<ProductPage />} />
                     <Route path="/overview/:productID" element={<ProductOverview/>} />
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/checkout" element={<CheckoutPage />} />
                     <Route path="/orders" element={<OrdersPage />} />
+                    <Route path="/*" element={<NotFoundPage />} />
                 </Routes>
             </div>
         </div>
