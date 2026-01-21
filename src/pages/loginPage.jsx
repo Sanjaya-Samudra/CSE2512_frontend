@@ -12,9 +12,6 @@ export default function LoginPage() {
 	const [isLoading, setIsLoading] = useState(false);
 	
 	async function login() {
-		console.log("Login button clicked");
-		console.log("Email:", email);
-		console.log("Password:", password);
 		setIsLoading(true);
 		try {
 			const res = await axios.post(

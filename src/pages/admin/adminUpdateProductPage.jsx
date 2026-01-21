@@ -49,7 +49,6 @@ export default function AdminUpdateProductPage() {
 		let images = await Promise.all(imagePromises).catch((err)=>{
 			toast.error("Error uploading images. Please try again.");
 			console.log("Error uploading images:");
-			console.log(err);
 			return;
 		});
 
